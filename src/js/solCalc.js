@@ -5,9 +5,12 @@ export class SolAge {
 
   }
 
-  function() {
-    
-  }    
-}
+  earthDays(earthYears) {
+    let output = parseInt(earthYears) * 365;
+    return output;
+  }   
+  
+  
+};
 
 //business logic

@@ -9,8 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'eval-source-map',
-  devServer: {               
-    contentBase: './dist'    
+  devServer: {
+    contentBase: './dist'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -42,17 +42,18 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'assets/images/',
-              esModule: false,
+              esModule: false
             }
           }
         ]
       },
+
       {
         test: /\.html$/,
         use: [
           'html-loader'
         ]
-      },
+      }
     ]
   }
 };
