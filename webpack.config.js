@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'template',
+      title: 'Sol-Age_Calculator',
       template: './src/index.html',
       inject: 'body'
     })
