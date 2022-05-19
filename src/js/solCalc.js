@@ -1,8 +1,8 @@
-export class solAge {
-  constructor(ex1, ex2, ex3) {
-    this.ex1 = ex1;
-    this.ex2 = ex2;
-    this.ex3 = ex3;
+export class SolAge {
+  constructor(earthAge, lifeSpan) {
+    this.earthAge = earthAge;
+    this.lifeSpan = lifeSpan;
+
   }
 
   function() {
