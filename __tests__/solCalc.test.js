@@ -56,4 +56,9 @@ test('should subtract someones venus age from their venus life expectancy', () =
   expect(myAge.venusYears(myAge.lifeSpan) - myAge.venusYears(myAge.earthAge)).toEqual(58)
 })
 
+test('should subtract somones mars age from life expectamcy', () => {
+  expect(myAge.marsYears(myAge.lifeSpan) - myAge.marsYears(myAge.earthAge)).toEqual(19);
+})
+
+
 });
