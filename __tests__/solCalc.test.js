@@ -64,5 +64,17 @@ test('should subtract someones jupiters age from their life expectancy', () => {
   expect(myAge.jupiterYears(myAge.lifeSpan) - myAge.jupiterYears(myAge.earthAge)).toEqual(3);
 })
 
+test('should subtract someones life expectancy, on earth, from their age if they are older than the earths average life expectancy', () => {
+  myAge = new SolAge(100, 73);
+  expect(myAge.earthAge - myAge.lifeSpan).toEqual(27);
+})
+
+test('should subtract someones life expectancy from their age, if theyre older than the life expectancy, depending on the planet', () => {
+  myAge = new SolAge(100, 73);
+  expect(myAge.mercuryYears(myAge.earthAge) - myAge.mercuryYears(myAge.lifeSpan)).toEqual(112);
+  expect(myAge.venusYears(myAge.earthAge) - myAge.venusYears(myAge.lifeSpan)).toEqual(44);
+  expect(myAge.marsYears(myAge.earthAge) - myAge.marsYears(myAge.lifeSpan)).toEqual(15);
+  expect(myAge.jupiterYears(myAge.earthAge) - myAge.jupiterYears(myAge.lifeSpan)).toEqual(2);
+})
 
 });
