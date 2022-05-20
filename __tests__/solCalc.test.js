@@ -4,7 +4,6 @@ describe('SolAge', () => {
 
     let myAge;
 
-
     beforeEach(() => {
       myAge = new SolAge(37, 73);
   
@@ -76,7 +75,4 @@ test('should subtract someones life expectancy from their age, if theyre older t
   expect(myAge.marsYears(myAge.earthAge) - myAge.marsYears(myAge.lifeSpan)).toEqual(15);
   expect(myAge.jupiterYears(myAge.earthAge) - myAge.jupiterYears(myAge.lifeSpan)).toEqual(2);
 })
-
-
-
 });
