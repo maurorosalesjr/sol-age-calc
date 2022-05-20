@@ -14,6 +14,9 @@ export class SolAge {
     return Math.floor(this.earthDays(earthYears) / 88);
   }
   
+  venusYears(earthYears) {
+    return Math.floor(this.earthDays(earthYears) / 225);
+  }
   
 };
 

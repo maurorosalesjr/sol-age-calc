@@ -28,6 +28,8 @@ describe('SolAge', () => {
     expect(myAge.venusYears(myAge.earthAge)).toEqual(60);
   })
 
-
+test('should calculate the age of someone on mars, using earth days', () => {
+  expect(myAge.marsYears(myAge.earthAge)).toEqual(19);
+})
 
 });
