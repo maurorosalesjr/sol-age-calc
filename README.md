@@ -1,8 +1,8 @@
-# _{Application Name}_
+# Solar Age Calculater
 
 #### By Mauro Rosales Jr
 
-#### _{Brief description of application}_
+#### this app will take your age and tell you how much life you have left on earth and a series of other planet, it will also calculate your age depending on a planets solar year
 
 ## Technologies Used
 
@@ -16,24 +16,28 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+this app will take your age and tell you how much life you have left on earth and a series of other planet, it will also calculate your age depending on a planets solar year
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* first follow link to this repo: https://github.com/maurorosalesjr/sol-age-calc
+* click the green "code" button and download zip
+* unzip the file and save it to your preferred location
+* launch VSCode then click file then open file
+* find this folder's location and open 
+* once opened open your terminal, once the terminal is opened change directories until you are in the root folder
+* once in the root folder type $ npm install (hit enter)
+* type: npm run build
+* you can now check out the tests and run tests of your own in the terminal
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* no known bugs
 
 ## License
+Open Source
 
 If you have any questions or concerns, email me at mauro.rosales247@gmail.com
-Copyright (c) _date_ Mauro Rosales Jr
+Copyright (c) May 2022 Mauro Rosales Jr
