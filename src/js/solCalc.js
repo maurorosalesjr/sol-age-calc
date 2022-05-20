@@ -18,6 +18,12 @@ export class SolAge {
     return Math.floor(this.earthDays(earthYears) / 225);
   }
   
+  marsYears(earthYears) {
+    return Math.floor(this.earthDays(earthYears) / 687);
+  }
+
+  
+
 };
 
 //business logic
