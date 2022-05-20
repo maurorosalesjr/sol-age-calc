@@ -22,7 +22,9 @@ export class SolAge {
     return Math.floor(this.earthDays(earthYears) / 687);
   }
 
-  
+  jupiterYears(earthYears) {
+    return Math.floor(this.earthDays(earthYears) / 4333);
+  }
 
 };
 
