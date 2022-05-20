@@ -32,12 +32,12 @@ describe('SolAge', () => {
 
 test('should calculate the age of someone on mars and thier life expectancy, using earth days', () => {
   expect(myAge.marsYears(myAge.earthAge)).toEqual(19);
-  expect(myAge.mercuryYears(myAge.lifeSpan)).toEqual(38);
+  expect(myAge.marsYears(myAge.lifeSpan)).toEqual(38);
 })
 
 test('should calculate the age of someone on Jupiter and thier life expectancy, using earth days', () => {
   expect(myAge.jupiterYears(myAge.earthAge)).toEqual(3);
-  expect(myAge.mercuryYears(myAge.lifeSpan)).toEqual(6);
+  expect(myAge.jupiterYears(myAge.lifeSpan)).toEqual(6);
 })
 
 test('should calculate the age of someones life expectancy on mercury', () => {
