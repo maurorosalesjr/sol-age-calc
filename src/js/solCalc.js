@@ -9,6 +9,10 @@ export class SolAge {
     let output = parseInt(earthYears) * 365;
     return output;
   }   
+
+  mercuryYears(earthYears){
+    return Math.floor(this.earthDays(earthYears) / 88);
+  }
   
   
 };
