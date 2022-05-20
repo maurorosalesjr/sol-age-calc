@@ -45,10 +45,12 @@ test('should calculate the age of someones life expectancy on mercury', () => {
 })
 
 test('should subract someones age from life expectancy on earth and return the remaining years they have left', () => {
-  expect(myAge.earthDays(myAge.lifeSpan) - myAge.earthDays(myAge.earthAge)).toEqual(36)
+  expect(myAge.lifeSpan - myAge.earthAge).toEqual(36);
 })
 
-
+test('should subtract someones mercury age from their murcury life span', () => {
+  expect(myAge.mercuryYears(myAge.earthAge) - myAge.mercuryYears(myAge.lifeSpan)).toEqual(149);
+})
 
 
 
