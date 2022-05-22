@@ -34,7 +34,7 @@ this app will take your age and tell you how much life you have left on earth an
 
 ## Known Bugs
 
-* no known bugs
+* when buildng, eslint throws and error and doesnt properly buildx
 
 ## License
 Open Source
