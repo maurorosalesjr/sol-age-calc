@@ -26,5 +26,5 @@ export class SolAge {
     return Math.floor(this.earthDays(earthYears) / 4333);
   }
 
-};
+}
 
