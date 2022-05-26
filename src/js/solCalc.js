@@ -22,14 +22,21 @@ export class SolAge {
   }
   remainingMercuryYears(mercuryYears) {
     if(mercuryYears > this.lifeSpan) {
-      return Math.floor(mercuryYears) - Math.floor(this.lifeSpan)
+      return Math.floor(mercuryYears - this.lifeSpan)
     } else {
-      return Math.floor(this.lifeSpan) - Math.floor(mercuryYears);
+      return Math.floor(this.lifeSpan - mercuryYears);
     }
   }
 
   venusYears(earthYears) {
     return Math.floor(this.earthDays(earthYears) / 225);
+  }
+  remainingVenusYears(venusYears) {
+    if(venusYears > this.lifeSpan) {
+      return Math.floor(venusYears - this.lifeSpan)
+    } else {
+      return Math.floor(this.lifeSpan - venusYears);
+    }
   }
   
   marsYears(earthYears) {

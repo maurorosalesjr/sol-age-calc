@@ -93,7 +93,12 @@ test('should calculate the age of someones life expectancy on mercury with new f
 
 test('should calculate the age of someones life expectancy on venus with new function, testing if someone is younger or older than the average life expectancy', () => {
   expect(myAge.venusYears(myAge.remainingVenusYears(37, 73))).toEqual(58);
-  expect(myAge.venusYears(myAge.remainingVenusYears(100, 73))).toEqual(44)
+  expect(myAge.venusYears(myAge.remainingVenusYears(100, 73))).toEqual(43);
+})
+
+test('should calculate the age of someones life expectancy on mars with new function, testing if someone is younger or older than the average life expectancy', () => {
+  expect(myAge.marsYears(myAge.remainingMarsYears(37, 73))).toEqual(19);
+  expect(myAge.marsYears(myAge.remainingMarsYears(100, 73))).toEqual(14);
 })
 
 
