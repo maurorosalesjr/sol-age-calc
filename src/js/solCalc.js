@@ -20,7 +20,14 @@ export class SolAge {
   mercuryYears(earthYears){
     return Math.floor(this.earthDays(earthYears) / 88);
   }
-  
+  remainingMercuryYears(mercuryYears) {
+    if(mercuryYears > this.lifeSpan) {
+      return Math.floor(mercuryYears) - Math.floor(this.lifeSpan)
+    } else {
+      return Math.floor(this.lifeSpan) - Math.floor(mercuryYears);
+    }
+  }
+
   venusYears(earthYears) {
     return Math.floor(this.earthDays(earthYears) / 225);
   }
