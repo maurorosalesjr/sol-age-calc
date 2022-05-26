@@ -1,14 +1,15 @@
 export class SolAge {
   constructor(earthAge, lifeSpan) {
     this.earthAge = earthAge;
-    this.lifeSpan = lifeSpan;
-
+    this.lifeSpan = lifeSpan;//average lifespan for humans on earth is 73 years
   }
 
   earthDays(earthYears) {
     let output = parseInt(earthYears) * 365;
     return output;
   }   
+
+
 
   mercuryYears(earthYears){
     return Math.floor(this.earthDays(earthYears) / 88);
@@ -25,6 +26,8 @@ export class SolAge {
   jupiterYears(earthYears) {
     return Math.floor(this.earthDays(earthYears) / 4333);
   }
+
+
 
 }
 
