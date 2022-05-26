@@ -11,7 +11,7 @@ export class SolAge {
 
   remainingEarthYears(earthYears){
     if(earthYears > this.lifeSpan){
-      return Math.floor(earthYears - this.lifeSpan) + '<p>"passed average Earth human life expectancy"</p>'
+      return Math.floor(earthYears - this.lifeSpan)
     } else {
       return Math.floor(this.lifeSpan - earthYears);
     }

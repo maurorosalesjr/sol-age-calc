@@ -85,4 +85,9 @@ test('should determine how many years someone has passed the average life expeca
   myAge = new SolAge(100, 73);
   expect(myAge.remainingEarthYears(100, 73)).toEqual(27);
 })
+
+test('should calculate the age of someones life expectancy on mercury with new function', () => {
+  expect(myAge.mercuryYears(remainingEarthYears(37, 73))).toEqual(149);
+})
+
 });
