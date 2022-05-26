@@ -30,11 +30,14 @@ this app will take your age and tell you how much life you have left on earth an
 * once in the root folder type $ npm install (hit enter)
 * type: npm run build
 * you can now check out the tests and run tests of your own in the terminal
+* in the tests page, write a test conditions you would like to test, then in your terminal type :npm run test
+* Once test is run, you can either refactor code to make test pass or continue onto the next test you would like to run.
+* when all tests pass you can start the program by typing, into your terminal,: npm run start
 
 
 ## Known Bugs
 
-* when buildng, eslint throws and error and doesnt properly buildx
+* no known bugs
 
 ## License
 Open Source
