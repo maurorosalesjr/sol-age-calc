@@ -42,6 +42,13 @@ export class SolAge {
   marsYears(earthYears) {
     return Math.floor(this.earthDays(earthYears) / 687);
   }
+  remainingMarsYears(marsYears) {
+    if(marsYears > this.lifeSpan) {
+      return Math.floor(marsYears - this.lifeSpan)
+    } else {
+      return Math.floor(this.lifeSpan - marsYears);
+    }
+  }
 
   jupiterYears(earthYears) {
     return Math.floor(this.earthDays(earthYears) / 4333);

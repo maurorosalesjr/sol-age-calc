@@ -101,5 +101,8 @@ test('should calculate the age of someones life expectancy on mars with new func
   expect(myAge.marsYears(myAge.remainingMarsYears(100, 73))).toEqual(14);
 })
 
-
+test('should calculate the age of someones life expectancy on jupiter with new function, testing if someone is younger or older than the average life expectancy', () => {
+  expect(myAge.jupiterYears(myAge.remainingJupiterYears(37, 73))).toEqual(3);
+  expect(myAge.jupiterYears(myAge.remainingJupiterYears(100, 73))).toEqual(2);
+})
 });
