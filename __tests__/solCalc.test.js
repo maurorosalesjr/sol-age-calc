@@ -75,4 +75,14 @@ test('should subtract someones life expectancy from their age, if theyre older t
   expect(myAge.marsYears(myAge.earthAge) - myAge.marsYears(myAge.lifeSpan)).toEqual(15);
   expect(myAge.jupiterYears(myAge.earthAge) - myAge.jupiterYears(myAge.lifeSpan)).toEqual(2);
 })
+
+test('should determine soneones remaining life', () => {
+  myAge = new SolAge(37, 73);
+  expect(myAge.remainingEarthYears(37, 73)).toEqual(36);
+})
+
+test('should determine how many years someone has passed the average life expecatncy', () => {
+  myAge = new SolAge(100, 73);
+  expect(myAge.remainingEarthYears(100, 73)).toEqual(27);
+})
 });

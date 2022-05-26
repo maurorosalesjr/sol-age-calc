@@ -9,7 +9,13 @@ export class SolAge {
     return output;
   }   
 
-
+  remainingEarthYears(earthYears){
+    if(earthYears > this.lifeSpan){
+      return Math.floor(earthYears - this.lifeSpan) + '<p>"passed average Earth human life expectancy"</p>'
+    } else {
+      return Math.floor(this.lifeSpan - earthYears);
+    }
+  }
 
   mercuryYears(earthYears){
     return Math.floor(this.earthDays(earthYears) / 88);
